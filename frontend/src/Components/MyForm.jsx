@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './Form.css'
 
 const MyForm = () => {
   const backendURL = 'http://127.0.0.1:8000';
@@ -54,13 +55,11 @@ const MyForm = () => {
   
 
   return (
-    <div className="container" style={{width:'100%' , display:'flex', justifyContent:'center',alignItems:'center'}}>
-      <div style={{width:'500px' , margin:'30px 0 30px 0'}}>
-      <h2>QR code generator</h2>
-      <form onSubmit={handleSubmit}>
-        <div className="mb-3">
-          <label htmlFor="fname" className="form-label">
-            First Name
+    <div className="ContainerForm">
+      <form onSubmit={handleSubmit} className='Form'>
+        <div >
+          <label htmlFor="fname">
+          الإسم
           </label>
           <input
             type="text"
@@ -72,13 +71,12 @@ const MyForm = () => {
             required
           />
         </div>
-        <div className="mb-3">
-          <label htmlFor="lname" className="form-label">
-            Last Name
+        <div >
+          <label htmlFor="lname" >
+          اللقب
           </label>
           <input
             type="text"
-            className="form-control"
             id="lname"
             name="lname"
             value={formData.lname}
@@ -86,13 +84,12 @@ const MyForm = () => {
             required
           />
         </div>
-        <div className="mb-3">
-          <label htmlFor="level" className="form-label">
-            Level
+        <div>
+          <label htmlFor="level">
+          المستوى الدراسي
           </label>
           <input
             type="level"
-            className="form-control"
             id="level"
             name="level"
             value={formData.level}
@@ -100,13 +97,12 @@ const MyForm = () => {
             required
           />
         </div>
-        <div className="mb-3">
-          <label htmlFor="university" className="form-label">
-            University
+        <div>
+          <label htmlFor="university" >
+          الجامعة
           </label>
           <input
             type="university"
-            className="form-control"
             id="university"
             name="university"
             value={formData.university}
@@ -114,23 +110,18 @@ const MyForm = () => {
             required
           />
         </div>
-        <button type="submit" className="btn btn-primary">
-          Submit
+        <button type="submit" id='button'>
+        اطلب
         </button>
       </form>
         {qrCodeURL && (
-        <div className="mt-4">
-          <h3>QR Code</h3>
-          <img src={`${backendURL}${qrCodeURL}`} alt="QR Code" />
+        <div >
+          <img src={`${backendURL}${qrCodeURL}`} alt="QR Code" /> <br/><br/>
+        
         </div>
+        
       )}
-       {qrCodeURL && 
-       (
-        <button onClick={handleDownload} className="btn btn-secondary mt-2">
-            Download QR Code
-        </button>
-       )}
-      </div>
+       
     </div>
   );
 };

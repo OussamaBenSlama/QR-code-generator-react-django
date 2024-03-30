@@ -120,5 +120,7 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')  
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",  # Replace with the actual URL of your React app
+    "http://localhost:3000",
+    "http://localhost:3001",  
+    # Replace with the actual URL of your React app
 ]

@@ -1,0 +1,6 @@
+.Home {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    background: linear-gradient(12deg, #46959c 0%, #7dc9f3 47%, #d5f8ff 100%);
+}

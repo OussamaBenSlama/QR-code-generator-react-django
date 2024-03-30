@@ -1,0 +1,126 @@
+.Section {
+    min-height: 90vh;
+    height: auto;
+    width: 100%;
+    display: flex;
+}
+.section-left {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2.5rem 1rem 2rem;
+    height: auto;
+    text-align: right;
+}
+.section-left h1 {
+    color: #11161D;
+    font-size: clamp(55px,6vw,74px);
+    font-weight: bold;
+    margin: 0;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    font-size: 3.4rem;
+    font-family: Almarai;
+}
+.section-left span {
+    color: #00a2ff;
+}
+.section-left p {
+    font-size: 16px;
+    max-width: 100%; 
+    line-height: 1.8;
+    letter-spacing: .3px;
+    display: block;
+    margin: 20px 0 20px 0;
+    font-family: Almarai;
+    text-align: right;
+    
+    
+}
+.section-left button {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 17px 31px;
+    border-radius: 24px;
+    border-width: 3px ;
+    font-family: var(--rubik);
+    display: inline-block;
+    border-radius: 16px;
+    padding: 14px 20px;
+    line-height: 1;
+    text-align: center;
+    color: #191b19;
+    transition: background-color .3s ease-in-out,border-color .3s ease-in-out;
+    cursor: pointer;
+    margin: auto 20px;
+    width: 10rem;
+    margin-bottom: 20px;
+}
+.explore_btn {
+    border: 2px solid #e3d500;
+    background: #fbe30c;
+}
+.section-left button:hover {
+    border: 2px solid #00a2ff;
+    background: #00a2ff;
+    color: white;
+}
+.section-right {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-right img {
+    max-width: 70%;
+    max-height: 70%;
+}
+.add-icon {
+    position: fixed;
+    top: 88vh;
+    right: 50px;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    z-index: 5;
+}
+@media (max-width: 868px) {
+    .Section {
+        display: block;
+    }
+    .section-left {
+        width: 100%;
+        padding: 0.4rem;
+        justify-content: left;
+        height: 70vh;
+    }
+    .section-left p {
+        max-width: 95%;
+        text-align: justify;
+    }
+    .section-left h1 {
+        font-size: 33px;
+        max-width: 100%;
+        line-height: 1.5;
+    }
+    .section-left > div {
+        padding-left: 0.5rem;
+        
+    }
+    .section-right {
+        margin-bottom: 3rem;
+    }
+    .section-left .btn {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    .add-icon {
+        display: none;
+    }
+    /* .section-left button {
+        width: 9rem;
+        height: 2.5rem;
+    } */
+}

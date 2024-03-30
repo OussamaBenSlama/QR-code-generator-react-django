@@ -16,7 +16,7 @@ class Personne(models.Model):
 
     def save(self, *args, **kwargs):
         # Concatenate the information into a single string
-        qr_code_data = f"Name: {self.fname} {self.lname}\nLevel: {self.level}\nUniversity: {self.university}"
+        qr_code_data = f" Full Name: {self.fname} {self.lname}\nLevel: {self.level}\nUniversity: {self.university}"
 
         # Generate the QR code
         qrcodeimg = qrcode.make(qr_code_data)

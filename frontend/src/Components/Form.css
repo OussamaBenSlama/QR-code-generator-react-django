@@ -1,0 +1,61 @@
+.ContainerForm {
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+}
+
+.Form {
+    padding-top: 3.5rem;
+    width: 40%;
+    height: auto;
+    padding: 1.5rem;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    
+}
+.Form > div div {
+    
+    /* display: flex;
+    align-items: center; */
+    width: 100%;
+    margin-bottom: 1rem;
+
+} 
+.Form label {
+    display: inline-block;
+    width: 100%;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: medium;
+    color: #00a2ff;
+    text-align: right;
+    margin-bottom: 0.5rem;
+}
+.Form input , textarea , select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid rgb(151, 150, 150);
+    box-shadow:  0 2px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 0.4rem;
+    background-color: rgb(245, 245, 245);
+    resize: none;
+    margin-bottom: 2rem;
+}
+.Form input:focus , textarea:focus , select:focus {
+    outline: none;
+}
+ #button {
+    width: 9rem;
+    background-color: #00a2ff;
+    border: none;
+    color: white;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    cursor: pointer;
+}
